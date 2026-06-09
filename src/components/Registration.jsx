@@ -79,9 +79,9 @@ const Registration = () => {
                 <input type="email" name="email" placeholder="Email Address" className="w-full bg-transparent border-b border-zinc-200 py-3 outline-none focus:border-[#C5A059] transition-all text-sm" required />
                 <input type="tel" name="phone" placeholder="Phone Number (Optional)" className="w-full bg-transparent border-b border-zinc-200 py-3 outline-none focus:border-[#C5A059] transition-all text-sm" />
 
-                <h4 className="text-xs font-bold uppercase tracking-widest text-zinc-400 border-b pb-2">Upload 15-30 seconds recording why you want to participate in the contest</h4>
+                {/* <h4 className="text-xs font-bold uppercase tracking-widest text-zinc-400 border-b pb-2">Upload 15-30 seconds recording why you want to participate in the contest</h4> */}
 
-                {/* Video upload */}
+                {/* Video upload
                 <input
                   name="video-upload"
                   type="file"
@@ -108,7 +108,7 @@ const Registration = () => {
                     </div>)}
 
 
-                </label>
+                </label> */}
 
 
               </div>
@@ -128,7 +128,7 @@ const Registration = () => {
                     onClick={() => setCardType('apple')}
                     className={`flex-1 py-3 border text-[10px] font-bold uppercase tracking-widest transition-all ${cardType === 'apple' ? 'bg-[#1A1A1A] text-white border-[#1A1A1A]' : 'bg-white text-zinc-400 border-zinc-200 hover:border-zinc-400'}`}
                   >
-                    Apple Gift Card
+                    Apple iTunes Card
                   </option>
                   <option
                     value='google'
