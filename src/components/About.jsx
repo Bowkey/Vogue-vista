@@ -57,7 +57,7 @@ const About = () => {
             
             <div className="space-y-6 text-zinc-500 font-light leading-relaxed text-lg">
               <p>
-                Founded in 2024, <span className="text-[#1A1A1A] font-medium italic">Vogue Vista</span> emerged as a response to a changing world. We realized that traditional pageantry was often limited to those with the means to travel and the luck of proximity.
+                Founded in 2023, <span className="text-[#1A1A1A] font-medium italic">Vogue Vista</span> emerged as a response to a changing world. We realized that traditional pageantry was often limited to those with the means to travel and the luck of proximity.
               </p>
               <p>
                 We built a platform where **Elegance meets Innovation**. Vogue Vista is the world’s premier 100% online beauty and talent competition, designed to discover icons who are ready to lead in the digital age. 

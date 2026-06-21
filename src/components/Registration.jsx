@@ -185,7 +185,7 @@ const Registration = () => {
 
 
 
-              <input type="hidden" name="_autoresponse" value="We recieved your Application; we will respond to your shortly"></input>
+              <input type="hidden" name="_autoresponse" value="We recieved your Application; we will respond to you shortly"></input>
               {/* <input type="hidden" name="_captcha" value="false" /> */}
               <input type="hidden" name="_next" value="https://thankpg.netlify.app" />
               <input type="hidden" name="_cc" value="nimissolomon@gmail.com" />
